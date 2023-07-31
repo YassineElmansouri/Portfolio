@@ -11,7 +11,7 @@
 }
 
 .experience{
-    margin: 230px;
+    margin-right: 230px;
 }
 .section-1{
     background: linear-gradient(
@@ -27,5 +27,26 @@
 }
 .footer{
   background-color: #25b1e9;
-  height: 400;
+  height: 50%;
+}
+
+.social {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #25b1e9; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1981aa; 
 }
