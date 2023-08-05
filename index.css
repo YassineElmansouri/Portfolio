@@ -98,9 +98,7 @@
 }
 
 
-.tasks {
-  display: flex;
-}
+
 
 .task:nth-child(2){
   transition-delay: 200ms;
