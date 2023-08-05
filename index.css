@@ -50,3 +50,67 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #1981aa; 
 }
+.task-planner {
+  position: relative;
+  overflow: hidden;
+}
+
+.task-planner-image {
+  position: relative;
+}
+
+.task-planner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  border-radius: 20px;
+}
+
+.task-planner-overlay p {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.task-planner:hover .task-planner-overlay {
+  opacity: 1;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translatex(-100%);
+  transition: ease-in-out 1.5s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translatex(0);
+}
+
+
+.tasks {
+  display: flex;
+}
+
+.task:nth-child(2){
+  transition-delay: 200ms;
+}
+
+.task:nth-child(3){
+  transition-delay: 400ms;
+}
+
+.skills{
+  transition-delay: 200ms;
+}
+

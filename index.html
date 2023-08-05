@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="icon" href="assets/logo.png">
     <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
     <title>Yassine</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
             <img src="assets/devices.png" alt="devices" style="max-height: 400px;">
         </center>
         <div class="section-1" id="About-me">
-            <div class="p-6" >
+            <div class="p-6 hidden" >
                 <h1 class="is-size-3 has-text-centered has-text-weight-bold has-text-white m-6">
                     Hi, I’m Yassine Elmansouri
                 </h1>
@@ -54,7 +55,7 @@
                     As a Full Stack Developer, my passion for coding ignited over two years ago when I earned my diploma at a vocational center. Now on an exciting internship, I approach each challenge with quiet confidence and innate curiosity. Collaborating with talented minds, I strive to craft innovative digital solutions that leave a lasting impact. Constantly improving my skills, I'm driven to create elegant and robust products, enriching user experiences in both business and consumer realms.
                 </h1>
             </div>
-            <div class="columns  is-centered mx-6 experience" id="Skills">
+            <div class="columns  is-centered mx-6 experience hidden skills" id="Skills">
                 <div class="column experiences has-text-centered rounded-right" style="height: 650px;">
                     <div class="m-5">
                         <img src="assets/code.PNG" alt="code" style="max-width: 90px;">
@@ -110,15 +111,38 @@
     <div class="m-6" id="Projects">
             <h1 class="is-centered has-text-centered is-size-2 has-text-weight-bold has-text-black">My Recent Work</h1>
             <h1 class="is-centered has-text-centered is-size-4 has-text-black m-5">Here are a few past design projects I've worked on. Want to see more? Email me.</h1>
-            <div class="columns is-variable is-4">
-                <div class="column work mx-5">
-                    <img src="assets/task-planner.jpg" alt="task-planner" style="border-radius: 20px;">
+            <div class="columns is-variable is-4 tasks">
+                <div class="column work mx-5 task-planner task hidden">
+                    <a href="https://taskplanner-kappa.vercel.app/" target="_blank" rel="noreferrer noopener">
+                        <div class="task-planner-image">
+                            <img src="assets/task-planner.jpg" alt="task-planner" style="border-radius: 20px;height: 170px; width: 400px;">
+                            <div class="task-planner-overlay">
+                                <p>a Task Planner Website</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="column work mx-5">
-                    <img src="assets/V-assistant.jpg" alt="task-planner" style="border-radius: 20px; width: 500px;" >
+
+                <div class="column work mx-5 task-planner task hidden">
+                    <a href="javascript:void(0);" target="_blank" rel="noreferrer noopener">
+                        <div class="task-planner-image">
+                            <img src="assets/V-assistant.jpg" alt="task-planner" style="border-radius: 20px;height: 170px; width: 400px;" >
+                            <div class="task-planner-overlay">
+                                <p>Not Completed!!</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="column work mx-5">
-                    <img src="assets/pytube.jpg" alt="task-planner" style="border-radius: 20px; width: 500px;">
+
+                <div class="column work mx-5 task-planner task hidden">
+                    <a href="javascript:void(0);" target="_blank" rel="noreferrer noopener">
+                        <div class="task-planner-image">
+                            <img src="assets/pytube.jpg" alt="task-planner" style="border-radius: 20px;height: 170px; width: 400px;">
+                            <div class="task-planner-overlay">
+                                <p>Not Completed!</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
             </div>
